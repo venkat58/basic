@@ -7,3 +7,4 @@ student= {
 }
 s = json.load(student)
 print('name {student.name}'.format(s.name))
+print('hi')
