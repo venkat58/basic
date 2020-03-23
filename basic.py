@@ -1,13 +1,8 @@
 import json
+import time
 
-student= {
-    "name": 'venkat',
-    'age': 34,
-    'sex':'male'
-}
-s = json.load(student)
-print('name {student.name}'.format(s.name))
-print('hi')
-print('v-1.10')
-print('v-1.11')
-print('v-1.12')
+student= '{"name":"venkat","age":34,"sex":"male"}'
+s = json.loads(student)
+print('name {0}'.format(s['name']))
+print(f"function format name {s['name']}")
+print(time.localtime(time.time()))  
