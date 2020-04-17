@@ -8,6 +8,10 @@ app = Flask(__name__) #creating the Flask class object
 def home(name, age):
     return f"hello, this is our first flask website <h1>{name} </h1>" ;  
 
+@app.route('/')
+def message():
+    return '<html><body><h1>Hi, welcome to the website</h1></body></html>'
+
 @app.route('/user/<name>')
 def user(name):
     if name== 'student':
