@@ -14,7 +14,7 @@ def login():
 def get_login():  
       uname=request.args.get('uname')  
       passwrd=request.args.get('pass')  
-      if uname=="venkat" and passwrd=="veeru":  
+      if uname=="venkat" and passwrd=="veeru":      
           return "Welcome %s" %uname  
 
 @app.route('/')  
